@@ -1,0 +1,31 @@
+#non-humans-page {
+  text-align: center;
+}
+
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.character-card-container {
+  margin: 10px;
+  flex: 0 0 calc(33.33% - 20px); 
+  box-sizing: border-box; 
+}
+
+.character-card-container img {
+  width: 100%; 
+  height: auto; 
+}
+
+.character-card-container a {
+  text-decoration: none; 
+}
+
+.character-card-container h2, 
+.character-card-container p {
+  font-weight: bold; 
+  color: #4CAF50; 
+  text-align: center; 
+}

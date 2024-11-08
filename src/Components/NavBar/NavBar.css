@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+.MuiAppBar-root {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  transition: all 0.3s ease !important;
+}
+
+
+.MuiAppBar-root.scrolled {
+  background-color: rgba(0, 0, 0, 0.98) !important;
+  backdrop-filter: blur(10px);
+}
+
+.MuiToolbar-root {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.5rem 2rem !important;
+}
+
+
+.logo {
+  height: 50px;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.5));
+}
+
+
+@media (max-width: 768px) {
+  .MuiToolbar-root {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .MuiButton-root {
+    padding: 6px 12px !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .MuiToolbar-root {
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+  
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.MuiAppBar-root {
+  animation: fadeIn 0.5s ease-out;
+}

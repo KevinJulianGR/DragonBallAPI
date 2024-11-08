@@ -1,0 +1,85 @@
+.details-page {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    color: #ffffff;
+    padding-top: 4rem; /* Añadido para dar espacio arriba */
+}
+
+.details-page__container {
+    display: flex;
+    flex-direction: row; /* Mantenemos la dirección en row */
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.details-page__image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Cambiado de center a flex-start */
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    margin-top: 3rem; /* Ajusta este valor para alinear con "Especie:" */
+}
+
+.details-page__image {
+    width: 100%;
+    max-width: 400px;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* El resto del CSS permanece igual */
+
+.details-page__info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 1.5rem; 
+    gap: 1.5rem;
+}
+
+.details-page__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0; 
+}
+
+.details-page__details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .details-page__details {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+.details-page__detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #cccccc; 
+}
+
+.details-page__label {
+    font-weight: bold;
+    margin-bottom: 0.5rem; 
+    color: #ffffff;
+}
+
+.details-page__description {
+    margin-top: 1rem; 
+    font-size: 1.1rem;
+    line-height: 1.8; 
+    color: #dddddd; 
+}
